@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.page {
+    height: 100vh;
+    width: 100%;
+    /* background-color: brown; */
+    padding: 2rem;
+}
+
+header {
+    height: 10%;
+    width: 100%;
+    /* background-color: slateblue; */
+    padding: 15px;
+}
+
+header div{
+    height: 50px;
+    width: 50px;
+    background-color: #3C3A47;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+header div img{
+    height: 35px;
+    color: #F5F5F6;
+    
+}
+#logo svg {
+    height: 3rem;
+    display: block;
+}
+
+main {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-content {
+    width: 50%;
+    height: 100%;
+    /* background-color: sienna; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 15px;
+    /* margin-top: 15px; */
+
+}
+
+div>p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.4rem;
+    line-height: 1.3;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin: 2rem 0;
+}
+
+.subtitle {
+    color: #B1B0B5;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.hint {
+    font-style: italic;
+    color: #B1B0B5;
+}
+
+.chair-image {
+    width: 50%;
+    height: 100%;
+    /* background-color: plum; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-content div {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+input {
+    width: 50%;
+    height: 77px;
+    background-color: #F5F5F6;
+    border: none;
+    border-radius: 8px;
+    transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out, fill .3s ease-in-out, transform .3s ease-in-out;
+    padding: 1.333rem;
+    outline: none;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    border: 1px solid #F5F5F6;
+}
+
+input:hover {
+    background-color: #ecebed;
+    /* transition: 0.3 ease-in-out; */
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #B1B0B5;
+    /* transition: 0.3 ease-in-out; */
+}
+
+input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    /* font-weight: 700; */
+    color: #B1B0B5;
+}
+
+
+.chair-image img {
+    width: 66%;
+    max-width: 560px;
+}
+
+button {
+    width: 30%;
+    height: 77px;
+    border-radius: 8px;
+    border: 1px solid #D19361;
+    color: #D19361;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    font-weight: 700;
+    background-color: inherit;
+
+}
+
+button:hover {
+    background-color: #D19361;
+    color: white;
+
+}
+
+footer {
+    height: 10%;
+    width: 100%;
+    /* background-color: slateblue; */
+
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.333rem;
+    padding: 15px;
+}
+
+footer div {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #3C3A47;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+i {
+
+    color: #F5F5F6;
+
+}
+
+/* @media screen and (min-width: 1126px) {
+
+    .chair-image img {
+        width: 50%;
+    }
+} */
+
+@media screen and (max-width: 1110px) {
+    main {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .main-content,
+    .chair-image {
+        width: 100%;
+    }
+
+    .page {
+        height: auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    input,
+    button {
+        width: 100%;
+        height: 60px;
+    }
+
+    .chair-image,
+    .chair-image img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    input,
+    button {
+        height: 50px;
+    }
+
+    .chair-image,
+    .chair-image img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input,
+    button {
+        height: 40px;
+        width: 50%;
+    }
+
+    .main-content div {
+        flex-direction: column;
+    }
+
+    .chair-image,
+    .chair-image img {
+        display: none;
+    }
+}
